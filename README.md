@@ -1,0 +1,2 @@
+# NotInternetStore.github.io
+Землетрясения
