@@ -1,0 +1,609 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>Список землетрясений</title>
+  </head>
+  <body>
+    <p>
+      <a href="index.html">Самые сильные землетрясения</a><br>
+      <a href="table.html">Список землетрясений</a>
+    </p>
+    <hr>
+
+    <form>
+      <details>
+        <summary>График</summary>
+        <table>
+          <tr>
+            <th>Значение по оси OX</th>
+            <th align="center">Результат</th>
+          </tr>
+          <tr>
+            <td>
+              <label><input type="radio" value="0" name="name">Страна</label>
+            </td>
+            <td>
+              <label><input type="checkbox">Самая высокая магнитуда</label>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label><input type="radio" value="1" name="name">Год</label>
+            </td>
+            <td>
+              <label><input type="checkbox">Самое продолжительное</label>
+            </td>
+          </tr>
+          <tr>
+            <td></td>
+            <td>
+              <label
+                ><input type="checkbox">Число пострадавших за всё время</label>
+            </td>
+          </tr>
+        </table>
+        <input type="submit" value="Построить"><br><br>
+        Здесь будет график
+      </details>
+    </form>
+
+    <form>
+      <details>
+        <summary>Фильтр</summary>
+        <p>
+          <label>Страна: <input type="text"></label>
+        </p>
+        <p>
+          <label>Магнитуда: от <input type="text"></label>
+          <label> до <input type="text"></label>
+        </p>
+        <p>
+          <label>Число пострадавших: от <input type="text"></label>
+          <label> до <input type="text"></label>
+        </p>
+        <p>
+          <label>Год: от <input type="text"></label>
+          <label> до <input type="text"></label>
+        </p>
+        <p>
+          <label>Продолжительность: от <input type="text"></label>
+          <label> до <input type="text"></label>
+        </p>
+        <p>
+          <label>Глубина: от <input type="text"></label>
+          <label> до <input type="text"></label>
+        </p>
+        <p>
+          <input type="submit" value="Найти">
+        </p>
+      </details>
+    </form>
+
+    <form>
+      <details>
+        <summary>Сортировка</summary>
+        <p>
+          <label>Первый уровень:
+            <select name="1stLvl">
+              <option value="0" selected>Нет</option>
+              <option value="1">Страна</option>
+              <option value="2">Магнитуда</option>
+              <option value="3">Год</option>
+              <option value="4">Дата</option>
+              <option value="5">Число пострадавших</option>
+              <option value="6">Глубина</option>
+              <option value="7">Длительность</option>
+            </select>
+          </label>
+          <label>по убыванию?
+            <input type="checkbox">
+          </label>
+        </p>
+        <p>
+          <label>Второй уровень:
+            <select name="1stLvl">
+              <option value="0" selected>Нет</option>
+              <option value="1">Страна</option>
+              <option value="2">Магнитуда</option>
+              <option value="3">Год</option>
+              <option value="4">Дата</option>
+              <option value="5">Число пострадавших</option>
+              <option value="6">Глубина</option>
+              <option value="7">Длительность</option>
+            </select>
+          </label>
+          <label>по убыванию?
+            <input type="checkbox">
+          </label>
+        </p>
+        <p>
+          <label>Третий уровень:
+            <select name="1stLvl">
+              <option value="0" selected>Нет</option>
+              <option value="1">Страна</option>
+              <option value="2">Магнитуда</option>
+              <option value="3">Год</option>
+              <option value="4">Дата</option>
+              <option value="5">Число пострадавших</option>
+              <option value="6">Глубина</option>
+              <option value="7">Длительность</option>
+            </select>
+          </label>
+          <label>по убыванию?
+            <input type="checkbox">
+          </label>
+        </p>
+        <p>
+          <input type="submit" value="Сортировать">
+        </p>
+      </details>
+    </form>
+
+    <table border="1" cellpadding="5" cellspacing="0">
+      <thead>
+        <tr>
+          <th>Страна</th>
+          <th>Магнитуда</th>
+          <th>Год</th>
+          <th>Дата</th>
+          <th>Число пострадавших</th>
+          <th>Глубина (км)</th>
+          <th>Длительность (секунды)</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Чили</td>
+          <td>9.5</td>
+          <td>1960</td>
+          <td>22 мая</td>
+          <td>1,655</td>
+          <td>35</td>
+          <td>600</td>
+        </tr>
+        <tr>
+          <td>Аляска, США</td>
+          <td>9.2</td>
+          <td>1964</td>
+          <td>27 марта</td>
+          <td>131</td>
+          <td>25</td>
+          <td>300</td>
+        </tr>
+        <tr>
+          <td>Индийский океан</td>
+          <td>9.1</td>
+          <td>2004</td>
+          <td>26 декабря</td>
+          <td>227,898</td>
+          <td>30</td>
+          <td>500</td>
+        </tr>
+        <tr>
+          <td>Япония</td>
+          <td>9.0</td>
+          <td>2011</td>
+          <td>11 марта</td>
+          <td>19,747</td>
+          <td>29</td>
+          <td>360</td>
+        </tr>
+        <tr>
+          <td>Россия (Камчатка)</td>
+          <td>9.0</td>
+          <td>1952</td>
+          <td>4 ноября</td>
+          <td>0</td>
+          <td>21</td>
+          <td>300</td>
+        </tr>
+        <tr>
+          <td>Чили</td>
+          <td>8.8</td>
+          <td>2010</td>
+          <td>27 февраля</td>
+          <td>525</td>
+          <td>35</td>
+          <td>210</td>
+        </tr>
+        <tr>
+          <td>Эквадор, Колумбия</td>
+          <td>8.8</td>
+          <td>1906</td>
+          <td>31 января</td>
+          <td>1,000</td>
+          <td>20</td>
+          <td>360</td>
+        </tr>
+        <tr>
+          <td>Аляска, США</td>
+          <td>8.7</td>
+          <td>1965</td>
+          <td>4 февраля</td>
+          <td>0</td>
+          <td>25</td>
+          <td>300</td>
+        </tr>
+        <tr>
+          <td>Суматра, Индонезия</td>
+          <td>8.6</td>
+          <td>2012</td>
+          <td>11 апреля</td>
+          <td>0</td>
+          <td>22</td>
+          <td>260</td>
+        </tr>
+        <tr>
+          <td>Индия</td>
+          <td>8.6</td>
+          <td>1950</td>
+          <td>15 августа</td>
+          <td>1,526</td>
+          <td>15</td>
+          <td>400</td>
+        </tr>
+        <tr>
+          <td>Тибет</td>
+          <td>8.6</td>
+          <td>1950</td>
+          <td>15 августа</td>
+          <td>4,000</td>
+          <td>15</td>
+          <td>400</td>
+        </tr>
+        <tr>
+          <td>Андреяновские острова, США</td>
+          <td>8.6</td>
+          <td>1957</td>
+          <td>9 марта</td>
+          <td>0</td>
+          <td>25</td>
+          <td>240</td>
+        </tr>
+        <tr>
+          <td>Крысиные острова, США</td>
+          <td>8.6</td>
+          <td>1965</td>
+          <td>4 февраля</td>
+          <td>0</td>
+          <td>20</td>
+          <td>300</td>
+        </tr>
+        <tr>
+          <td>Суматра, Индонезия</td>
+          <td>8.5</td>
+          <td>2005</td>
+          <td>28 марта</td>
+          <td>1,300</td>
+          <td>30</td>
+          <td>120</td>
+        </tr>
+        <tr>
+          <td>Кермадекские острова, Новая Зеландия</td>
+          <td>8.5</td>
+          <td>1976</td>
+          <td>7 октября</td>
+          <td>0</td>
+          <td>35</td>
+          <td>200</td>
+        </tr>
+        <tr>
+          <td>Камчатка, Россия</td>
+          <td>8.5</td>
+          <td>1923</td>
+          <td>3 февраля</td>
+          <td>0</td>
+          <td>30</td>
+          <td>180</td>
+        </tr>
+        <tr>
+          <td>Курильские острова, Россия</td>
+          <td>8.3</td>
+          <td>2006</td>
+          <td>15 ноября</td>
+          <td>0</td>
+          <td>27</td>
+          <td>210</td>
+        </tr>
+        <tr>
+          <td>Соломоновы острова</td>
+          <td>8.1</td>
+          <td>2007</td>
+          <td>1 апреля</td>
+          <td>52</td>
+          <td>10</td>
+          <td>120</td>
+        </tr>
+        <tr>
+          <td>Мексика</td>
+          <td>8.1</td>
+          <td>1985</td>
+          <td>19 сентября</td>
+          <td>10,000</td>
+          <td>15</td>
+          <td>120</td>
+        </tr>
+        <tr>
+          <td>Перу</td>
+          <td>8.1</td>
+          <td>2001</td>
+          <td>23 июня</td>
+          <td>74</td>
+          <td>33</td>
+          <td>90</td>
+        </tr>
+        <tr>
+          <td>Индия</td>
+          <td>8.1</td>
+          <td>1934</td>
+          <td>15 января</td>
+          <td>10,700</td>
+          <td>15</td>
+          <td>60</td>
+        </tr>
+        <tr>
+          <td>Китай</td>
+          <td>8.0</td>
+          <td>2008</td>
+          <td>12 мая</td>
+          <td>87,587</td>
+          <td>19</td>
+          <td>120</td>
+        </tr>
+        <tr>
+          <td>Пакистан</td>
+          <td>7.8</td>
+          <td>2005</td>
+          <td>8 октября</td>
+          <td>86,000</td>
+          <td>15</td>
+          <td>90</td>
+        </tr>
+        <tr>
+          <td>Армения</td>
+          <td>7.8</td>
+          <td>1988</td>
+          <td>7 декабря</td>
+          <td>25,000</td>
+          <td>10</td>
+          <td>20</td>
+        </tr>
+        <tr>
+          <td>Турция</td>
+          <td>7.6</td>
+          <td>1999</td>
+          <td>17 августа</td>
+          <td>17,000</td>
+          <td>17</td>
+          <td>37</td>
+        </tr>
+        <tr>
+          <td>Иран</td>
+          <td>7.6</td>
+          <td>2003</td>
+          <td>26 декабря</td>
+          <td>31,000</td>
+          <td>10</td>
+          <td>20</td>
+        </tr>
+        <tr>
+          <td>Италия</td>
+          <td>7.4</td>
+          <td>1980</td>
+          <td>23 ноября</td>
+          <td>4,800</td>
+          <td>10</td>
+          <td>60</td>
+        </tr>
+        <tr>
+          <td>Мьянма</td>
+          <td>7.3</td>
+          <td>2011</td>
+          <td>24 марта</td>
+          <td>74</td>
+          <td>30</td>
+          <td>20</td>
+        </tr>
+        <tr>
+          <td>Россия (Сахалин)</td>
+          <td>7.8</td>
+          <td>1995</td>
+          <td>28 мая</td>
+          <td>1,989</td>
+          <td>20</td>
+          <td>60</td>
+        </tr>
+        <tr>
+          <td>Непал</td>
+          <td>7.8</td>
+          <td>2015</td>
+          <td>25 апреля</td>
+          <td>8,964</td>
+          <td>15</td>
+          <td>90</td>
+        </tr>
+        <tr>
+          <td>Индонезия</td>
+          <td>7.8</td>
+          <td>1977</td>
+          <td>19 августа</td>
+          <td>8,000</td>
+          <td>33</td>
+          <td>200</td>
+        </tr>
+        <tr>
+          <td>Гаити</td>
+          <td>7.0</td>
+          <td>2010</td>
+          <td>12 января</td>
+          <td>316,000</td>
+          <td>13</td>
+          <td>30</td>
+        </tr>
+        <tr>
+          <td>Чили</td>
+          <td>7.8</td>
+          <td>1906</td>
+          <td>16 августа</td>
+          <td>20,000</td>
+          <td>30</td>
+          <td>120</td>
+        </tr>
+        <tr>
+          <td>Япония</td>
+          <td>7.9</td>
+          <td>1923</td>
+          <td>1 сентября</td>
+          <td>142,800</td>
+          <td>23</td>
+          <td>210</td>
+        </tr>
+        <tr>
+          <td>Китай</td>
+          <td>8.0</td>
+          <td>1976</td>
+          <td>28 июля</td>
+          <td>242,769</td>
+          <td>16</td>
+          <td>30</td>
+        </tr>
+        <tr>
+          <td>Чили</td>
+          <td>8.2</td>
+          <td>2014</td>
+          <td>1 апреля</td>
+          <td>6</td>
+          <td>20</td>
+          <td>120</td>
+        </tr>
+        <tr>
+          <td>Перу</td>
+          <td>7.9</td>
+          <td>1970</td>
+          <td>31 мая</td>
+          <td>66,000</td>
+          <td>45</td>
+          <td>40</td>
+        </tr>
+        <tr>
+          <td>Тайвань</td>
+          <td>7.6</td>
+          <td>1999</td>
+          <td>21 сентября</td>
+          <td>2,415</td>
+          <td>8</td>
+          <td>90</td>
+        </tr>
+        <tr>
+          <td>Непал</td>
+          <td>7.8</td>
+          <td>1934</td>
+          <td>15 января</td>
+          <td>10,700</td>
+          <td>15</td>
+          <td>60</td>
+        </tr>
+        <tr>
+          <td>Индонезия</td>
+          <td>7.6</td>
+          <td>2009</td>
+          <td>30 сентября</td>
+          <td>1,117</td>
+          <td>90</td>
+          <td>180</td>
+        </tr>
+        <tr>
+          <td>Япония</td>
+          <td>7.8</td>
+          <td>1993</td>
+          <td>12 июля</td>
+          <td>230</td>
+          <td>10</td>
+          <td>120</td>
+        </tr>
+        <tr>
+          <td>Филиппины</td>
+          <td>7.8</td>
+          <td>1990</td>
+          <td>16 июля</td>
+          <td>1,621</td>
+          <td>25</td>
+          <td>45</td>
+        </tr>
+        <tr>
+          <td>Пакистан</td>
+          <td>7.6</td>
+          <td>2005</td>
+          <td>8 октября</td>
+          <td>87,350</td>
+          <td>26</td>
+          <td>50</td>
+        </tr>
+        <tr>
+          <td>Мексика</td>
+          <td>8.1</td>
+          <td>2017</td>
+          <td>8 сентября</td>
+          <td>98</td>
+          <td>69</td>
+          <td>90</td>
+        </tr>
+        <tr>
+          <td>Индонезия</td>
+          <td>8.6</td>
+          <td>2012</td>
+          <td>11 апреля</td>
+          <td>0</td>
+          <td>22</td>
+          <td>260</td>
+        </tr>
+        <tr>
+          <td>Чили</td>
+          <td>8.8</td>
+          <td>2010</td>
+          <td>27 февраля</td>
+          <td>525</td>
+          <td>35</td>
+          <td>210</td>
+        </tr>
+        <tr>
+          <td>Япония</td>
+          <td>9.0</td>
+          <td>2011</td>
+          <td>11 марта</td>
+          <td>19,747</td>
+          <td>29</td>
+          <td>360</td>
+        </tr>
+        <tr>
+          <td>Индийский океан</td>
+          <td>9.1</td>
+          <td>2004</td>
+          <td>26 декабря</td>
+          <td>227,898</td>
+          <td>30</td>
+          <td>500</td>
+        </tr>
+        <tr>
+          <td>Аляска, США</td>
+          <td>9.2</td>
+          <td>1964</td>
+          <td>27 марта</td>
+          <td>131</td>
+          <td>25</td>
+          <td>300</td>
+        </tr>
+        <tr>
+          <td>Чили</td>
+          <td>9.5</td>
+          <td>1960</td>
+          <td>22 мая</td>
+          <td>1,655</td>
+          <td>35</td>
+          <td>600</td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>
