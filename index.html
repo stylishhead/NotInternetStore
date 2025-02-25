@@ -3,36 +3,19 @@
   <head>
     <meta charset="utf-8">
     <title>Главная страница</title>
+    <link rel="stylesheet" href="styles.css">
   </head>
   <body>
-    <p>
-      <a href="index.html">Самые сильные землетрясения</a><br>
+    <div class="nav">
+      <a href="index.html" class="pressed">Самые сильные землетрясения</a>
       <a href="table.html">Список землетрясений</a>
-    </p>
-    <hr>
+      <span class="MainName">Землетрясения</span>
+    </div>
 
-    <a href="detailed.html">
-      <img src="pictures/japan.jpg" width="200" alt="">
-    </a>
-    <img src="pictures/usa.jpg" width="200" alt="">
-    <img src="pictures/chile.jpg" width="200" alt="">
-    <img src="pictures/russia.jpg" width="200" alt="">
-    <img src="pictures/indonesia.jpg" width="200" alt="">
-
-    <hr>
-    <h1>Землетрясения</h1>
-    <img src="pictures/ForMainText.jpg" align="center" width="200" alt="">
-    <p>
-      Землетрясения — это одно из самых мощных и разрушительных природных
-      явлений на планете. Они возникают из-за внезапного смещения тектонических
-      плит, которые образуют земную кору. Такие движения высвобождают огромные
-      количества энергии, которая распространяется в виде сейсмических волн. Эти
-      волны вызывают колебания поверхности земли, что может приводить к
-      разрушению зданий, разрушению инфраструктуры и потере жизней. Магнитуда
-      землетрясения, которая измеряется по шкале Рихтера или её аналогам,
-      определяет силу и масштабы разрушений.
-    </p>
-    <p>
+    <div class="topic">
+      <div class="pict"><img class="mainPicture" src="pictures/ForMainText.jpg" alt=""></div>
+      <h1>Могущество природы и страх человечества</h1>
+    <div class="text">
       История показывает, что землетрясения оказывают значительное влияние не
       только на природу, но и на судьбы целых народов. К примеру, Великое
       чилийское землетрясение 1960 года, магнитудой 9.5, стало крупнейшим
@@ -42,10 +25,18 @@
       технологии, такие как системы раннего оповещения и усовершенствованные
       инженерные решения, позволяют значительно снизить человеческие потери и
       минимизировать последствия этих катастроф.
-    </p>
-    <p>
-      <img src="pictures/Chili1960.jpg" align="center" width="200" alt="">
-      Великое чилийское землетрясение
-    </p>
+    </div>
+    </div>
+
+    <div class="detailed">
+      <div><a href="detailed.html">
+        <img src="pictures/japan.jpg" width="200" alt="">
+      </a><div>Япония</div><span>Описание про Японию</span></div>
+      <div><img src="pictures/usa.jpg" width="200" alt=""><div>США</div><span>Описание про США</span></div>
+      <div><img src="pictures/chile.jpg" width="200" alt=""><div>Чили</div><span>Описание про Чили</span></div>
+      <div><img src="pictures/russia.jpg" width="200" alt=""><div>Россия</div><span>Описание про Россию</span></div>
+      <div><img src="pictures/indonesia.jpg" width="200" alt=""><div>Индонезия</div><span>Описание про Индонезию</span></div>
+      <div><img src="pictures/indonesia.jpg" width="200" alt=""><div>Индонезия</div><span>Описание про Индонезию</span></div>
+    </div>
   </body>
 </html>
